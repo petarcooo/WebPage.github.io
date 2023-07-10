@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.start{
+    height: 100vh;
+    width: 100%;
+    background-image: url("image/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    padding: 40px 40px;
+    justify-content: space-between;
+}
+
+.logoname{
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    color: deepskyblue;
+    padding: 5px 15px 5px;
+    font-weight: 100;
+}
+.start .active{
+    color: blue;
+}
+
+span{
+    color:darkgray;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 15px 20px;
+}
+nav ul li a{
+    color:aqua;
+    font-weight: bolder;
+    text-transform: none;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:red;
+}
+
+.data a{
+    text-decoration: none;
+    color:red;
+    background-color: black;
+    font-weight: bolder;
+    border-radius: 35px;
+    padding: 10px 10px;
+
+}
+
+.data{
+    position: absolute;
+    /*margin-right: 15%;*/
+    margin-top: 15%;
+    width: 820px;
+    margin-left: 40px;
+}
+
+.data h1{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 35px;
+    padding-left: 10px;
+
+}
+.data h2{
+    color: darkcyan;
+    padding: 10px 10px;
+}
+
+.data p{
+    color:whitesmoke;
+    padding-left: 5px;
+    font-size: 28px;
+    margin-bottom: 40px;
+    line-height: 1.0;
+}
+
+.aboutme{
+    width: auto;
+    padding: 100px 0px;
+    background-color: silver;
+    height: 510px;
+}
+
+.aboutme img{
+    height:auto;
+    width: 540px;
+    padding: 60px 10px;
+}
+
+.textaboutme{
+    width: 550px;
+}
+
+.important{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.textaboutme h3{
+    color: white;
+    font-size:75px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+
+.textaboutme h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom:  25px;
+    text-transform:capitalize;
+}
+
+.textaboutme p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px ;
+    margin-bottom: 45px;
+}
+
+.textaboutme h3 span{
+    color: black;
+
+}
+
+.textaboutme h4 span{
+    color: red;
+}
+
+.textaboutme p span{
+    color: red;
+}
+.heading{
+    font-size: 45px;
+    color: whitesmoke;
+    padding: 25px 500px 15px;
+    margin-left: 150px;
+
+}
+.heading span{
+    color: lightskyblue;
+}
+
+.myskills{
+    min-height: auto;
+    padding-bottom: 7rem;
+    background-color: gray;
+    height: 700px;
+}
+.myskills .myskills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+   margin: 5px 10px
+}
+.myskills .myskills-colums{
+    flex: 1 1 40rem;
+}
+.title-skills{
+    color: whitesmoke;
+}
+.myskills-colums .title-skills{
+    font-size: 2.2rem;
+    margin: 15px 40px 15px;
+}
+.myskills-main .myskills-content{
+    position: relative;
+    border: .2rem solid lightskyblue;
+    margin-left: 20px;
+    margin-right: 15px;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.myskills-main .myskills-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .4s;
+}
+.myskills-main .myskills-content:hover::before {
+    width: 100%;
+}
+
+.myskills-content .myskills-progress{
+    padding: 1rem 0;
+}
+.myskills-content .myskills-progress h3{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.myskills-content .myskills-progress h3 span{
+    color: whitesmoke;
+
+}
+.myskills-content .myskills-progress .bar{
+    height: 1.2rem;
+    border-radius: .6rem;
+    border: .2rem solid lightskyblue;
+    padding: .5rem;
+    margin: 15px 0;
+}
+.myskills-content .myskills-progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background-color: lightskyblue;
+
+}
+.myskills-colums:nth-child(1) .myskills-content .myskills-progress:nth-child(1) .bar span {
+    width: 80%;
+}
+.myskills-colums:nth-child(1) .myskills-content .myskills-progress:nth-child(2) .bar span {
+    width: 65%;
+}
+.myskills-colums:nth-child(1) .myskills-content .myskills-progress:nth-child(3) .bar span {
+    width: 55%;
+}
+.myskills-colums:nth-child(1) .myskills-content .myskills-progress:nth-child(4) .bar span {
+    width: 45%;
+}
+.myskills-colums:nth-child(2) .myskills-content .myskills-progress:nth-child(1) .bar span {
+    width: 55%;
+}
+.myskills-colums:nth-child(2) .myskills-content .myskills-progress:nth-child(2) .bar span {
+    width: 50%;
+}
+.myskills-colums:nth-child(2) .myskills-content .myskills-progress:nth-child(3) .bar span {
+    width: 45%;
+}
+.myskills-colums:nth-child(2) .myskills-content .myskills-progress:nth-child(4) .bar span {
+    width: 30%;
+}
+.footer-section{
+    background-image: url("image/vodopad.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.footer-section h2{
+    text-align: center;
+    color: grey;
+    padding-top: 60px;
+}
+.border-position{
+    width: 80px;
+    height: 3px;
+    background-color: blue;
+    margin: 20px auto;
+}
+
+.form-contact{
+    max-width: 600px;
+    margin: auto;
+    padding: 0px 15px;
+    overflow: hidden;
+}
+
+.form-contact-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    border: 0;
+    background: lightblue;
+    padding: 20px 30px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.form-contact-text:focus{
+    box-shadow: 2px 2px 4px blue;
+
+}
+
+textarea.form-contact-text{
+    resize: none;
+    height: 110px;
+}
+
+.form-contact-botton{
+    float: right;
+    background-color: grey;
+    color: lightblue;
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s
+}
+.form-contact-botton:hover{
+    background: green;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: silver;
+
+}
+.footer-text p{
+    font-size: 18px;
+}
